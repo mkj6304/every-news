@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const API_KEY = "your_actual_api_key"; // hardcoded temporarily
+  const API_KEY = process.env.REACT_APP_API_KEY; // hardcoded temporarily
   const { country = "in", category = "general", page = 1, pageSize = 5 } = req.query;
 
   try {
